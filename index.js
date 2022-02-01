@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 require("dotenv").config()
 const generateImage = require("./generateImage")
-
+const prefix = "/"
 
 const client = new Discord.Client({
     intents: [
@@ -31,5 +31,6 @@ client.on("guildMemberAdd", async (member) => {
         files: [image]
     })
 })
+
 
 client.login(process.env.TOKEN)

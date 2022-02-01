@@ -2,21 +2,21 @@ const Canvas = require('canvas')
 const Discord = require('discord.js')
 
 const dimensions = {
-    height: 1040,
-    width: 1920,
+    height: 675,
+    width: 1200,
     margin: 50
 }
 
 const av = {
-    size: 512,
-    y: 224,
-    x: 704
+    size: 256,
+    x: 480,
+    y: 170
 }
 
 
 
 
-const background = "https://files.catbox.moe/5zwiof.jpg"
+const background = "https://files.catbox.moe/p0oyu7.jpg"
 
 const generateImage = async (member) => {
     let username = member.user.username
@@ -39,7 +39,7 @@ const generateImage = async (member) => {
     const avimg = await Canvas.loadImage(avatarUrl)
     ctx.save()
     ctx.beginPath()
-    ctx.arc(av.x + av.size / 2, av.y + av.size / 2, av.size / 2 + 50, 0, Math.PI * 2, true)
+    ctx.arc(av.x + av.size / 2, av.y + av.size / 2, av.size / 2, 0, Math.PI * 2, true)
     ctx.closePath()
     ctx.clip()
 
