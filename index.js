@@ -30,11 +30,11 @@ client.loadSlashCommands(bot, false)
 
 module.exports = bot
 
-client.on("messageCreate", (message) => {
-    if (message.content == "hi") {
-        message.reply("Hello World!")
-    }
-})
+// client.on("messageCreate", (message) => {
+//     if (message.content == "hi") {
+//         message.reply("Hello World!")
+//     }
+// })
 
 const welcomeChannelId = "938138626108313651"
 const rulesChannelId = "938140217490169909"
@@ -56,7 +56,7 @@ client.on("interactionCreate", (interaction) => {
     if (!slashcmd) return interaction.reply("Invalid slash command")
 
     if (slashcmd.perm && !interaction.member.permissions.has(slashcmd.perm))
-        return interaction.reply("You do not have permission for this command")
+        return interaction.reply(`${interaction.member.user.tag} is not in the moderatoers file. This incident will be reported.`)
 
     slashcmd.run(client, interaction)
 })

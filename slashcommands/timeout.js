@@ -41,7 +41,7 @@ module.exports = {
             description: "The duration of the timeout",
             type: "NUMBER",
             choices: durations,
-            require: true
+            required: true
         },
         {
             name: "reason",
