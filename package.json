@@ -9,10 +9,8 @@
   "author": "twfl",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/rest": "^0.3.0",
     "axios": "^0.25.0",
     "canvas": "^2.9.0",
-    "discord-api-types": "^0.26.1",
     "discord.js": "^13.6.0",
     "dotenv": "^15.0.0",
     "os": "^0.1.2",
