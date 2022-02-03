@@ -25,7 +25,7 @@ client.on("ready", async () => {
         return console.error("Target guild not found")
 
     await guild.commands.set([...client.slashcommands.values()])
-    console.log(`Successfully loaded in ${client.slashcommands.size}`)
+    console.log(`Successfully loaded in ${client.slashcommands.size} commands`)
     process.exit(0)
 })
 

@@ -1,6 +1,12 @@
 const { MessageEmbed } = require('discord.js');
+const client = require('nekos.life');
+const neko = new client();
 
+async function test() {
+    console.log(await neko.sfw.hug());
+}
 
+test();
 
 const run = async (client, interaction) => {
     let member = interaction.options.getMember("user")
