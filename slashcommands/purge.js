@@ -1,8 +1,3 @@
-const channels = [
-	{ name: "welcome", value: '938138626108313651' },
-	{ name: "photos", value: "934521884127662080" },
-	{ name: "rules", value: "938140217490169909" },
-]
 const run = async (client, interaction) => {
 	let amount = interaction.options.getNumber("amount")
 	if (amount < 100) return interaction.reply("The value should be less or equal to 100")
