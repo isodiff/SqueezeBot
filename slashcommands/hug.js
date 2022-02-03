@@ -1,20 +1,21 @@
-const { MessageEmbed } = require('discord.js');
-const client = require('nekos.life');
-
-
 const run = async (client, interaction) => {
     let member = interaction.options.getMember("user")
-
-    const hugEmbed = new MessageEmbed()
-        .setColor('#f542e6')
-        .setTitle('Hug!')
-        .setDescription(`${interaction.member.user.username} hugged ${member.user.username}`)
-
-        .setImage('https://de.catbox.moe/9ht703.gif')
+    const axios = require('axios');
+    const { MessageEmbed } = require('discord.js');
 
     if (!member) return interaction.reply("This friend is not with us here")
 
     try {
+        const response = await axios.get('https://nekos.life/api/v2/img/hug');
+        const hugData = response.data
+
+        const hugEmbed = new MessageEmbed()
+            .setColor('#f542e6')
+            .setTitle('Hug!')
+            .setDescription(`**${interaction.member.user.username}** hugged **${member.user.username}**`)
+
+            .setImage(hugData['url'])
+
         const mesg = await interaction.reply({ embeds: [hugEmbed] })
         return
     }
@@ -37,4 +38,3 @@ module.exports = {
     ],
     run
 }
-

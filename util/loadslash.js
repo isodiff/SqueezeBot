@@ -20,13 +20,16 @@ client.loadSlashCommands = (bot, reload) => require("../handlers/slashcommands")
 client.loadSlashCommands(bot, false)
 
 client.on("ready", async () => {
-    const guild = client.guilds.cache.get(guildId)
-    if (!guild)
-        return console.error("Target guild not found")
-
-    await guild.commands.set([...client.slashcommands.values()])
-    console.log(`Successfully loaded in ${client.slashcommands.size} commands`)
-    process.exit(0)
+    const guild = null // client.guilds.cache.get(guildId)
+    if (!guild) {
+        await client.application.commands.set([...client.slashcommands.values()])
+        console.log(`Successfully loaded in ${client.slashcommands.size} global commands`)
+        process.exit(0)
+    } else {
+        await guild.commands.set([...client.slashcommands.values()])
+        console.log(`Successfully loaded in ${client.slashcommands.size} commands`)
+        process.exit(0)
+    }
 })
 
 client.login(process.env.TOKEN)
