@@ -14,5 +14,5 @@ module.exports = (bot, reload) => {
             client.commands.set(command.name, command)
         })
     })
-    console.log(`Loaded ${client.commands.size} commands`)
+    console.log(`Loaded ${client.commands.size} legacy commands`)
 }

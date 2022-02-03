@@ -1,10 +1,35 @@
 const run = async (client, interaction) => {
-    const prettyMilliseconds = require("pretty-ms");
-    let avatarUrl = interaction.user.displayAvatarURL({ format: 'png', dynamic: false, size: 512 })
+
+    const { MessageEmbed } = require('discord.js')
+    const prettyMilliseconds = require("pretty-ms")
+    const packageJSON = require("../package.json");
+    const discordJSVersion = packageJSON.dependencies["discord.js"];
+    const os = require("os");
+
+    const freeMemory = os.freemem() / 1000000000;
+    const totalMemory = os.totalmem() / 1000000000;
+
+    const infoEmbed = new MessageEmbed()
+        .setColor('RANDOM')
+        .setTitle('Bot Stats')
+
+        .setAuthor({ name: 'author: twfl', iconURL: 'https://de.catbox.moe/65u3r5.jpg', url: 'https://github.com/isodiff' })
+        .setDescription('BlahajMaid Discord bot. Cleanse the corrupt souls of this cursed land')
+        .addFields(
+            { name: 'Uptime:', value: `${prettyMilliseconds(client.uptime)}`, inline: true },
+            { name: 'Username:', value: `${client.user.tag}`, inline: true },
+            { name: 'discord.js:', value: `${discordJSVersion}`, inline: true },
+        )
+        .addFields(
+            { name: 'Commands:', value: `9`, inline: true },
+            { name: 'Total memory (GB):', value: `${totalMemory}`, inline: true },
+            { name: 'Free memory (GB):', value: `${freeMemory}`, inline: true }
+        )
+        .setTimestamp()
+
     try {
-        await interaction.reply(`Uptime: ${prettyMilliseconds(client.uptime)}`)
-        await interaction.channel.send(`Avatar: ${avatarUrl}`)
-        return interaction.channel.send(`Bot name: ${client.user.tag}`)
+        await interaction.reply({ embeds: [infoEmbed] })
+        return
     }
     catch (err) {
         if (err) {
@@ -18,6 +43,8 @@ const run = async (client, interaction) => {
 module.exports = {
     name: "xbot-info",
     description: "View information about a bot",
-    perm: "ADMINISTRATOR",
+    perm: "",
     run
 }
+
+// .setURL('https://github.com/isodiff/SqueezeBot')
