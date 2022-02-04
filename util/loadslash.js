@@ -12,7 +12,7 @@ let bot = {
 
 
 
-// const guildId = "773203659952750613"
+const guildId = "773203659952750613"
 
 client.slashcommands = new Discord.Collection()
 
