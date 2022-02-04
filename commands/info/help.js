@@ -12,7 +12,7 @@ const helpEmbed = {
             value: `**\! **or** \/**`,
             inline: true
         }, {
-            name: 'Dokumentation:',
+            name: 'Documentation:',
             value: '[Click here](https://github.com/isodiff/SqueezeBot#squeezebot-also-known-as-blahaj-maid)',
             inline: true
         },
@@ -41,7 +41,7 @@ const helpEmbed = {
             inline: true
         }, {
             name: "ping:",
-            value: "Pinguj bota, odczekaj 3 sekundy.",
+            value: "Ping the bot, wait 3 seconds.",
             inline: true
         },
         {
