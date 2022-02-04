@@ -25,13 +25,15 @@ const run = async (client, interaction) => {
                 name: 'Username:',
                 value: `${client.user.tag}`,
                 inline: true
-            },
-            {
+            }, {
                 name: 'Commands:',
                 value: `9`,
                 inline: true
-            },
-            {
+            }, {
+                name: 'Prefix:',
+                value: `\! or \/`,
+                inline: true
+            }, {
                 name: 'discord.js:',
                 value: `${discordJSVersion}`,
                 inline: true
@@ -43,10 +45,13 @@ const run = async (client, interaction) => {
                 name: 'Free memory (GB):',
                 value: `${freeMemory}`,
                 inline: true
-            },
-            {
+            }, {
                 name: 'Source Code:',
                 value: '[Click here](https://github.com/isodiff/SqueezeBot)',
+                inline: true
+            }, {
+                name: 'Documentation:',
+                value: '[Click here](https://github.com/isodiff/SqueezeBot/tree/main#readme)',
                 inline: true
             }
         ],
