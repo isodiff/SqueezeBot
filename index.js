@@ -32,4 +32,7 @@ module.exports = bot
 client.login(process.env.TOKEN)
 
 
-// TODO: 1. add rozgrzeszenie 2. Opętanie
+// TODO:
+// 1. add rozgrzeszenie
+// 2. Opętanie
+// 3. Egzorcyzm

@@ -12,7 +12,7 @@ let bot = {
 
 
 
-const guildId = "773203659952750613"
+// const guildId = "773203659952750613"
 
 client.slashcommands = new Discord.Collection()
 
@@ -20,7 +20,7 @@ client.loadSlashCommands = (bot, reload) => require("../handlers/slashcommands")
 client.loadSlashCommands(bot, false)
 
 client.on("ready", async () => {
-    const guild = null // client.guilds.cache.get(guildId)
+    const guild = client.guilds.cache.get(guildId) // null
     if (!guild) {
         await client.application.commands.set([...client.slashcommands.values()])
         console.log(`Successfully loaded in ${client.slashcommands.size} global commands`)
