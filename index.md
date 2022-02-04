@@ -1,4 +1,5 @@
 # SqueezeBot (also known as Blahaj Maid)  
+![image](https://files.catbox.moe/a09eyh.jpg)
 
 Discord bot that can't do much. Includes several fun commands to entertain you and your friends, as well as moderation commands to punish bad behaving users.  
 
