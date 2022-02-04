@@ -38,7 +38,7 @@ const run = async (client, interaction) => {
                     inline: true
                 }, {
                     name: 'Commands:',
-                    value: `9`,
+                    value: `11`,
                     inline: true
                 }, {
                     name: 'Prefix:',
