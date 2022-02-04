@@ -1,77 +1,83 @@
 const run = async (client, interaction) => {
-    const prettyMilliseconds = require("pretty-ms")
-    const packageJSON = require("../package.json");
-    const discordJSVersion = packageJSON.dependencies["discord.js"];
-    const os = require("os");
-
-    function between(min, max) {
-        return Math.floor(
-            Math.random() * (max - min) + min
-        )
-    }
-
-
-    const freeMemory = os.freemem() / 1000000000;
-    const totalMemory = os.totalmem() / 1000000000;
-
-
-
     try {
 
         const helpEmbed = {
             color: "RANDOM",
-            title: 'Help',
-            description: 'Blahaj Maid commands',
+            title: '**Help**',
+            description: '**Blahaj Maid commands**',
             fields: [
                 {
-                    name: "\/ fun",
-                    value: "\u200B",
-                    inline: false
-                },
-                {
-                    name: "Hug:",
-                    value: "Hug a user! \r\n Arguments: @user",
-                    inline: true
-                }, {
-                    name: 'Username:',
-                    value: `${client.user.tag}`,
-                    inline: true
-                }, {
                     name: 'Commands:',
-                    value: `11`,
+                    value: `9`,
                     inline: true
                 }, {
                     name: 'Prefix:',
-                    value: `\! or \/`,
+                    value: `**\!** or **\/**`,
                     inline: true
                 }, {
-                    name: 'discord.js:',
-                    value: `${discordJSVersion}`,
-                    inline: true
-                }, {
-                    name: 'Total memory (GB):',
-                    value: `${totalMemory}`,
-                    inline: true
-                }, {
-                    name: 'Free memory (GB):',
-                    value: `${freeMemory}`,
-                    inline: true
-                }, {
-                    name: 'Source Code:',
-                    value: '[Click here](https://github.com/isodiff/SqueezeBot)',
-                    inline: true
-                }, {
-                    name: 'Documentation:',
+                    name: 'Dokumentation:',
                     value: '[Click here](https://github.com/isodiff/SqueezeBot#squeezebot-also-known-as-blahaj-maid)',
                     inline: true
                 },
                 {
-                    name: 'Random number (1 or 2):',
-                    value: `${between(1, 3)}`,
+                    name: "\/Fun",
+                    value: "\r\n--------",
+                    inline: false
+                },
+                {
+                    name: "Hug:",
+                    value: "Hug a user!\r\nArguments: **@user**",
                     inline: true
-                }
+                }, {
+                    name: 'Rozgrzeszenie:',
+                    value: `Sprowadź towarzysza na odpowiednią ścieżkę.\r\nArguments: **@user**`,
+                    inline: true
+                },
+                {
+                    name: "\/Info",
+                    value: "\r\n--------",
+                    inline: false
+                },
+                {
+                    name: "bot-info:",
+                    value: "Show more information about the bot.",
+                    inline: true
+                }, {
+                    name: "ping:",
+                    value: "Pinguj bota, odczekaj 3 sekundy.",
+                    inline: true
+                },
+                {
+                    name: "\/Mod",
+                    value: "\r\n--------",
+                    inline: false
+                },
+                {
+                    name: "opętanie:",
+                    value: "Rozkaż demonom opętać grzeszną duszę.\r\nArguments: **@user, reason**",
+                    inline: true
+                },
+                {
+                    name: "kick:",
+                    value: "Kick a member.\r\nArguments:** @user, reason**",
+                    inline: true
+                }, {
+                    name: "ban:",
+                    value: "Ban a member.\r\nArguments: **@user, reason**",
+                    inline: true
+                },
+                {
+                    name: "Timeout:",
+                    value: "Mute a member.\r\nArguments: **@user, duration, reason**",
+                    inline: true
+                },
+                {
+                    name: "purge:",
+                    value: "Delete multiple messeges. Max 100.\r\nArguments: **number**",
+                    inline: true
+                },
+
             ],
-            timestamp: new Date(),
         }
 
         await interaction.reply({ embeds: [helpEmbed] })
