@@ -38,7 +38,7 @@ const run = async (client, interaction) => {
                     inline: true
                 }, {
                     name: 'Commands:',
-                    value: `9`,
+                    value: `11`,
                     inline: true
                 }, {
                     name: 'Prefix:',
@@ -62,12 +62,12 @@ const run = async (client, interaction) => {
                     inline: true
                 }, {
                     name: 'Documentation:',
-                    value: '[Click here](https://github.com/isodiff/SqueezeBot#squeezebot-also-known-as-blahaj-maid)',
+                    value: '[Click here](https://isodiff.github.io/SqueezeBot/)',
                     inline: true
                 },
                 {
-                    name: 'Random number (1 or 2):',
-                    value: `${between(1, 3)}`,
+                    name: 'Random number (1 - 100):',
+                    value: `${between(1, 101)}`,
                     inline: true
                 }
             ],
