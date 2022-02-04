@@ -20,13 +20,13 @@ const run = async (client, interaction) => {
 
         const infoEmbed = {
             color: "RANDOM",
-            title: 'Bot Stats',
+            title: '**Bot Stats**',
             author: {
-                name: 'author: twfl',
+                name: 'author: **twfl**',
                 icon_url: 'https://de.catbox.moe/65u3r5.jpg',
                 url: 'https://github.com/isodiff',
             },
-            description: 'Blahaj Maid Discord bot. Cleanse the corrupt souls of this cursed land, and more!',
+            description: '**Blahaj Maid Discord bot. Cleanse the corrupt souls of this cursed land, and more!**',
             fields: [
                 {
                     name: "Uptime:",
@@ -42,7 +42,7 @@ const run = async (client, interaction) => {
                     inline: true
                 }, {
                     name: 'Prefix:',
-                    value: `\! or \/`,
+                    value: `**\!** or** \/**`,
                     inline: true
                 }, {
                     name: 'discord.js:',
