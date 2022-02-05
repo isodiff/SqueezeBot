@@ -1,8 +1,8 @@
 # SqueezeBot (also known as Blahaj Maid)  
 Rain... if only it could cleanse the corrupt souls of this world.
 Includes several fun commands to entertain you and your friends, as well as moderation commands to punish bad behaving users.  
-[Invite - Recommended](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=1102196230214&scope=bot%20applications.commands)
-[Invite - Administrator](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands)  
+[Invite - (recommended)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=1102196230214&scope=bot%20applications.commands)
+[Invite - (administrator)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands)  
 ---
 
 # Features:
