@@ -8,10 +8,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
 	        width="200" 
     		height="100"/></a>
 </p>
-[fork my repository](https://github.com/user/repository/fork)
-[watch this repo](https://github.com/user/repository/subscription)
-[fork my repository](https://github.com/user/repository/fork)  
-
+ 
 # Features:  
 * ### Welcome message
 ![welcome](https://de.catbox.moe/a8ublk.png)  
