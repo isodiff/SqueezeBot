@@ -37,3 +37,5 @@ Includes several fun commands to entertain you and your friends, as well as mode
 	* ***`/purge`*** command
  	 	* Delete multiple messages at once
 	> note: a max of 100 messages can be deleted
+
+<title>Document</title>
