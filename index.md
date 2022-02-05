@@ -19,6 +19,8 @@ Includes several fun commands to entertain you and your friends, as well as mode
     		height="100"/></a>
 </p>
 
+[View full documentaion](https://isodiff.github.io/SqueezeBot/wiki)
+
 # Features:    
 
 * ### Welcome message
