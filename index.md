@@ -7,8 +7,17 @@ Includes several fun commands to entertain you and your friends, as well as mode
 	  <img src="https://files.catbox.moe/mjkcb9.png" 
 	        width="200" 
     		height="100"/></a>
+  <a href="https://github.com/user/repository/subscription" 
+     rel="Watch repo">
+	  <img src="https://files.catbox.moe/5z67yq.png" 
+	        width="200" 
+    		height="100"/></a>
+    <a href="https://github.com/user/repository/fork" 
+      rel="Fork repo">
+	  <img src="https://de.catbox.moe/03ioag.png" 
+	        width="200" 
+    		height="100"/></a>
 </p>
- 
 # Features:  
 * ### Welcome message
 ![welcome](https://de.catbox.moe/a8ublk.png)  
