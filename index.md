@@ -1,7 +1,7 @@
 # SqueezeBot (also known as Blahaj Maid)  
 Rain... if only it could cleanse the corrupt souls of this world.
 Includes several fun commands to entertain you and your friends, as well as moderation commands to punish bad behaving users.  
-***
+---
 
 # Features:
 * ### Welcome message
