@@ -4,6 +4,15 @@
 Includes several fun commands to entertain you and your friends, as well as moderation commands to punish bad behaving users.  
 
 # Features:
+### Welcome message
+![welcome](https://de.catbox.moe/a8ublk.png)  
+
+### Legacy commands
+* `!help`
+  * View help about the bot  
+* `!ping`
+  * Check if the bot is online
+
 ### Moderation slash-commands
 * `/ban` command
   * Ban users from your server   
