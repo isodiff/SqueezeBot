@@ -5,7 +5,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
   <a href="https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=1102196230214&scope=bot%20applications.commands" 
      rel="Invite bot - recommended">
 	  <img src="https://files.catbox.moe/mjkcb9.png" 
-	        width="300" 
+	        width="200" 
     		height="100"/></a>
 </p>
 
