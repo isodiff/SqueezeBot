@@ -21,14 +21,14 @@ Includes several fun commands to entertain you and your friends, as well as mode
 
 # Features:    
 
- - ### Welcome message
+* ### Welcome message
 ![welcome](https://de.catbox.moe/a8ublk.png)  
 
-- ### Legacy commands
-	- **`!help` command**
-  		- View the list of all available commands  
-	- **`!ping` command**
-  		- Check if the bot is online
+* ### Legacy commands
+	* **`!help` command**
+  		* View the list of all available commands  
+	* **`!ping` command**
+  		* Check if the bot is online
 
 * ### Entertaining slash-commands
 	* **`/img interactions` command**
@@ -36,13 +36,13 @@ Includes several fun commands to entertain you and your friends, as well as mode
 	* **`/img request` command**
 		* Request pictures with nekos, cats, gecgs and more. Provided by *nekos.life* api
 
-- ### Info slash-commands
-	- **`/bot-info` command** 
-		- View information about the bot eg. Uptime, Discord.js version
-	- **`/help` command** 
-		- View the list of all available commands  
-	- **`/ping` command** 
-		- Check if the bot is online
+* ### Info slash-commands
+	* **`/bot-info` command** 
+		* View information about the bot eg. Uptime, Discord.js version
+	* **`/help` command** 
+		* View the list of all available commands  
+	* **`/ping` command** 
+		* Check if the bot is online
 
 * ### Moderation slash-commands
 	> These commands require special permissions
