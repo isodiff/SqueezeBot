@@ -91,7 +91,7 @@ const run = async (client, interaction) => {
     catch (err) {
         if (err) {
             console.error(err)
-            return interaction.reply(`Failed to get help from ${client.user.tag}`)
+            return interaction.reply({ content: `Failed to get help from ${client.user.tag}`, ephemeral: true })
         }
     }
 }

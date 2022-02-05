@@ -16,7 +16,7 @@ const av = {
 
 
 
-const background = "https://files.catbox.moe/p0oyu7.jpg"
+const background = "https://de.catbox.moe/bs75ks.png"
 
 const generateImage = async (member) => {
     let username = member.user.username

@@ -84,6 +84,6 @@ module.exports = {
     permissions: [],
     devOnly: false,
     run: async ({ client, message, args }) => {
-        message.reply({ embeds: [helpEmbed] })
+        message.reply({ embeds: [helpEmbed], ephemeral: true })
     }
 }

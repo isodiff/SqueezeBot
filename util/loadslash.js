@@ -27,7 +27,7 @@ client.on("ready", async () => {
         process.exit(0)
     } else {
         await guild.commands.set([...client.slashcommands.values()])
-        console.log(`Successfully loaded in ${client.slashcommands.size} commands`)
+        console.log(`Successfully loaded in ${client.slashcommands.size} slash-commands`)
         process.exit(0)
     }
 })
