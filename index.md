@@ -19,7 +19,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
     		height="100"/></a>
 </p>
 
-[View full documentaion](https://isodiff.github.io/SqueezeBot/wiki)
+[View full documentaion](https://isodiff.github.io/SqueezeBot/wiki), [Invite - (administrator)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands)
 
 # Features:    
 
@@ -57,5 +57,3 @@ Includes several fun commands to entertain you and your friends, as well as mode
 	* **`/purge` command**
  		* Delete multiple messages at once
 	> note: a max of 100 messages can be deleted
-
-[Invite - (administrator)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands) 
