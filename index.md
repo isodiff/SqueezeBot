@@ -50,10 +50,10 @@ Includes several fun commands to entertain you and your friends, as well as mode
   		* Ban users from your server   
 	* **`/kick` command**
   		* Kick unwanted members  
-	* **`/timeout`** command
+	* **`/timeout` command**
   		* Mute rude users for a set amount of time    
-	* **`/purge`** command
- 	 	* Delete multiple messages at once
+	* **`/purge` command**
+ 		* Delete multiple messages at once
 	> note: a max of 100 messages can be deleted
 
 [Invite - (administrator)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands) 
