@@ -28,7 +28,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
 
 * ### Legacy commands
 	* **`!help` command**
-  		* View the list of all available commands  
+  		* View the list of all available commands
 	* **`!ping` command**
   		* Check if the bot is online
 
@@ -39,21 +39,21 @@ Includes several fun commands to entertain you and your friends, as well as mode
 		* Request pictures with nekos, cats, gecgs and more. Provided by *nekos.life* api
 
 * ### Info slash-commands
-	* **`/bot-info` command** 
+	* **`/bot-info` command**
 		* View information about the bot eg. Uptime, Discord.js version
-	* **`/help` command** 
-		* View the list of all available commands  
-	* **`/ping` command** 
+	* **`/help` command**
+		* View the list of all available commands
+	* **`/ping` command**
 		* Check if the bot is online
 
 * ### Moderation slash-commands
 	> These commands require special permissions
 	* **`/ban` command**
-  		* Ban users from your server   
+  		* Ban users from your server
 	* **`/kick` command**
-  		* Kick unwanted members  
+  		* Kick unwanted members
 	* **`/timeout` command**
-  		* Mute rude users for a set amount of time    
+  		* Mute rude users for a set amount of time
 	* **`/purge` command**
  		* Delete multiple messages at once
 	> note: a max of 100 messages can be deleted
