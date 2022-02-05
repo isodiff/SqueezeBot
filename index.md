@@ -18,8 +18,10 @@ Includes several fun commands to entertain you and your friends, as well as mode
 	        width="200" 
     		height="100"/></a>
 </p>
-# Features:  
-* ### Welcome message
+
+# Features:    
+
+ - ### Welcome message
 ![welcome](https://de.catbox.moe/a8ublk.png)  
 
 - ### Legacy commands
