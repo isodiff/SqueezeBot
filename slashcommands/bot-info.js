@@ -22,7 +22,7 @@ const run = async (client, interaction) => {
             color: "RANDOM",
             title: '**Bot Stats**',
             author: {
-                name: 'author: **twfl**',
+                name: 'author: twfl',
                 icon_url: 'https://de.catbox.moe/65u3r5.jpg',
                 url: 'https://github.com/isodiff',
             },

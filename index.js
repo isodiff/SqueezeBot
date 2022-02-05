@@ -36,3 +36,6 @@ client.login(process.env.TOKEN)
 // 1. add rozgrzeszenie
 // 2. Opętanie
 // 3. Egzorcyzm
+// 4. Update /help
+// 5. nekos.life to wiki
+// 6. guildCreate event

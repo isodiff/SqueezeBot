@@ -25,8 +25,13 @@ const run = async (client, interaction) => {
                     inline: false
                 },
                 {
-                    name: "Hug:",
-                    value: "Hug a user!\r\nArguments: **@user**",
+                    name: "Img / request:",
+                    value: "Request an sfw image!\r\nArguments: **category**",
+                    inline: true
+                },
+                {
+                    name: "Img / interaction:",
+                    value: "Interact with friends!\r\nArguments: **type**, **@user**",
                     inline: true
                 }, {
                     name: 'Rozgrzeszenie:',
