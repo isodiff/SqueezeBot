@@ -1,4 +1,5 @@
-# [Official page](https://isodiff.github.io/SqueezeBot/) [Official Wiki](https://isodiff.github.io/SqueezeBot/wiki)
+## [Official page](https://isodiff.github.io/SqueezeBot/) 
+## [Official Wiki](https://isodiff.github.io/SqueezeBot/wiki)
 
 # SqueezeBot (also known as Blahaj Maid)  
 
