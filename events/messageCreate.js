@@ -18,11 +18,11 @@ module.exports = {
 
         let member = message.member
 
-        if (command.devOnly && owners.includes(member.id)) {
-            return message.reply("This command is only available for owners")
+        if (command.devOnly && !owners.includes(member.id)) {
+            return message.reply({ content: "This command is only available for owners", ephemeral: true })
         }
         if (command.permissions && member.permissions.missing(command.permissions).length !== 0) {
-            return message.reply("You do not have permissions to use this command.")
+            return message.reply({ content: "You do not have permissions to use this command.", ephemeral: true })
         }
 
         try {

@@ -12,7 +12,7 @@ module.exports = {
 
         const welcomeEmbed = new MessageEmbed()
             .setColor('#17ffaa')
-            .setTitle(`@${member.user.username} Welcome to the server!`)
+            .setTitle(`\@${member.user.username} Welcome to the server!`)
             .setDescription(`Please check out our <#${rulesChannelId}>`)
             .setImage('attachment://welcome.png')
             .setTimestamp()
