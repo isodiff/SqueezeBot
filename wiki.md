@@ -1,8 +1,8 @@
 # Official wiki
 ## Overview
-1. Overview
+1. [Overview](/SqueezeBot/wiki#overview)
 2. [Project Status](/SqueezeBot/wiki#project-status)
-3. Commands
+3. [Commands](/SqueezeBot/wiki#commands)
     1. Slash-commands
     2. Legacy Commands
 4. Events
