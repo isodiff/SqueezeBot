@@ -1,7 +1,7 @@
 # Official wiki
 ## Overview
 1. Overview
-2. Project Status
+2. [Project Status](/SqueezeBot/wiki#project-status)
 3. Commands
     1. Slash-commands
     2. Legacy Commands
@@ -11,7 +11,7 @@
     1. nekos.life
 
 ## Project Status
-The **project status** is actively updated. It has 3 possible states: "Actively Maintained", "Under Development" and "Deprecated"
+The **project status** is actively updated. The current state is "Under Development", but it might change to two other states: "Actively Maintained" or "Deprecated"
 <p align="center">
 	<img src="https://files.catbox.moe/vn3rnk.png" 
 	        width="300" 
