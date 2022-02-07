@@ -3,12 +3,12 @@
 1. [Overview](/SqueezeBot/wiki#overview)
 2. [Project Status](/SqueezeBot/wiki#project-status)
 3. [Commands](/SqueezeBot/wiki#commands)
-    1. Slash-commands
-    2. Legacy Commands
-4. Events
-    1. Member joins
-5. Api integrations
-    1. nekos.life
+    1. [Slash-commands](/SqueezeBot/wiki#slash-commands)
+    2. [Legacy Commands](/SqueezeBot/wiki#legacy-commands)
+4. [Events](/SqueezeBot/wiki#events)
+    1. [Member joins](#member-joins)
+5. [Api integrations]#member-joins)
+    1. [nekos.life](#member-joins)
 
 ## Project Status
 The **project status** is actively updated. The current state is "Under Development", but it might change to two other states: "Actively Maintained" or "Deprecated"
