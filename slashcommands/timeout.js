@@ -13,7 +13,7 @@ const run = async (client, interaction) => {
     let duration = interaction.options.getNumber("duration")
     let reason = interaction.options.getString("reason") || "No reason given"
 
-    if (!member) return interaction.reply("Invalid member")
+    if (!member) return interaction.reply({ content: "Invalid member", ephemeral: true })
 
     try {
         await member.timeout(duration, reason)
@@ -22,7 +22,7 @@ const run = async (client, interaction) => {
     catch (err) {
         if (err) {
             console.error(err)
-            return interaction.reply(`Failed to timeout ${member.user.tag}`)
+            return interaction.reply({ content: `Failed to timeout ${member.user.tag}`, ephemeral: true })
         }
     }
 }

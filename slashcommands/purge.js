@@ -1,7 +1,7 @@
 const run = async (client, interaction) => {
 	let amount = interaction.options.getNumber("amount")
-	if (amount < 100) return interaction.reply("The value should be less or equal to 100")
 	try {
+		if (amount < 100) return interaction.reply({ content: "The value should be less or equal to 100", ephemeral: true })
 		await interaction.channel.bulkDelete(amount)
 		interaction.reply((`${amount} messages have been deleted`))
 		return
@@ -9,7 +9,7 @@ const run = async (client, interaction) => {
 	catch (err) {
 		if (err) {
 			console.error(err)
-			return interaction.reply(`Failed to purge`)
+			return interaction.reply({ content: `Failed to purge`, ephemeral: true })
 		}
 	}
 }

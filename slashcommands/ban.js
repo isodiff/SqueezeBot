@@ -3,7 +3,7 @@ const run = async (client, interaction) => {
     let member = interaction.options.getMember("user")
     let reason = interaction.options.getString("reason") || "No reason given"
 
-    if (!member) return interaction.reply("Invalid member")
+    if (!member) return interaction.reply({ content: "Invalid member", ephemeral: true })
 
     try {
         await interaction.guild.bans.create(member, {
@@ -14,7 +14,7 @@ const run = async (client, interaction) => {
     catch (err) {
         if (err) {
             console.error(err)
-            return interaction.reply(`Failed to ban ${member.user.tag}`)
+            return interaction.reply({ content: `Failed to ban ${member.user.tag}}`, ephemeral: true })
         }
     }
 }

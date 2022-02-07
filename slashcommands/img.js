@@ -33,7 +33,7 @@ const run = async (client, interaction) => {
 
 
 
-        if (!member) return interaction.reply("This friend is not with us here")
+        if (!member) return interaction.reply({ content: "This friend is not with us here", ephemeral: true })
 
         try {
             const response = await axios.get(`https://nekos.life/api/v2/img${what}`);
