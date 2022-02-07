@@ -1,7 +1,9 @@
 # SqueezeBot (also known as Blahaj Maid)    
   
-Includes several fun commands to entertain you and your friends, as well as moderation commands to punish bad behaving users.     
+Includes several fun commands to entertain you and your friends, as well as moderation tools to punish bad behaving users.  
+
 <p align="center">
+	<br />
   <a href="https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=1102196230214&scope=bot%20applications.commands" 
      rel="Invite bot - recommended">
 	  <img src="https://files.catbox.moe/mjkcb9.png" 
@@ -26,44 +28,30 @@ Includes several fun commands to entertain you and your friends, as well as mode
 	<img src="https://de.catbox.moe/vz2ice.png" 
 	        width="300" 
     		height="100"/>
+	<br />
 
 </p>
 
 [View full documentaion,](https://isodiff.github.io/SqueezeBot/wiki) [Invite - (administrator)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands)
 
+> Screenshots are from early development versions, some parts may be diffrent in the version 1.2
+
 # Features:    
 
-* ### Welcome message
-![welcome](https://de.catbox.moe/a8ublk.png)  
+* ### Nice welcome message
+![welcome](https://files.catbox.moe/56nrbc.png)  
 
-* ### Legacy commands
-	* **`!help` command**
-  		* View the list of all available commands
-	* **`!ping` command**
-  		* Check if the bot is online
-
-* ### Entertaining slash-commands
+* ### Modern slash-commands
 	* **`/img interactions` command**
-		* Interact with your friends by hugging, kissing, slapping and more. Provided by *nekos.life* api
+		* Interact with your friends by hugging, kissing, slapping and more.
 	* **`/img request` command**
-		* Request pictures with nekos, cats, gecgs and more. Provided by *nekos.life* api
+		* Request pictures with nekos, cats, gecgs and more.
 
-* ### Info slash-commands
+![slash example](https://files.catbox.moe/wiblde.png)  
+
+* ### Stylish embeds  
 	* **`/bot-info` command**
 		* View information about the bot eg. Uptime, Discord.js version
-	* **`/help` command**
-		* View the list of all available commands
-	* **`/ping` command**
-		* Check if the bot is online
 
-* ### Moderation slash-commands
-	> These commands require special permissions
-	* **`/ban` command**
-  		* Ban users from your server
-	* **`/kick` command**
-  		* Kick unwanted members
-	* **`/timeout` command**
-  		* Mute rude users for a set amount of time
-	* **`/purge` command**
- 		* Delete multiple messages at once
-	> note: a max of 100 messages can be deleted
+![so pretty](https://files.catbox.moe/o7gbtb.png)  
+
