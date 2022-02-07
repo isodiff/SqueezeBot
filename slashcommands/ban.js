@@ -6,6 +6,7 @@ const run = async (client, interaction) => {
     if (!member) return interaction.reply({ content: "Invalid member", ephemeral: true })
 
     try {
+        await member.send(`You have been banned from ${interaction.guild.name}, reason: ${reason}`)
         await interaction.guild.bans.create(member, {
             reason
         })

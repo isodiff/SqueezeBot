@@ -6,6 +6,7 @@ const run = async (client, interaction) => {
     if (!member) return interaction.reply({ content: "Invalid member", ephemeral: true })
 
     try {
+        await member.send(`You have been kicked from ${interaction.guild.name}, reason: ${reason}`)
         await interaction.guild.members.kick(member, reason)
         return interaction.reply(`${member.user.tag} has been kicked out for ${reason}`)
     }
