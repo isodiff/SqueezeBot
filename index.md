@@ -18,6 +18,16 @@ Includes several fun commands to entertain you and your friends, as well as mode
 	        width="200" 
     		height="100"/></a>
 </p>
+<p align="center">
+	<img src="https://de.catbox.moe/cdm6k9.png" 
+	        width="300" 
+    		height="100"/>
+	<br />
+	<img src="https://de.catbox.moe/vz2ice.png" 
+	        width="300" 
+    		height="100"/>
+
+</p>
 
 [View full documentaion,](https://isodiff.github.io/SqueezeBot/wiki) [Invite - (administrator)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands)
 
