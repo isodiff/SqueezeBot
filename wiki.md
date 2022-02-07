@@ -7,7 +7,7 @@
     2. [Legacy Commands](/SqueezeBot/wiki#legacy-commands)
 4. [Events](/SqueezeBot/wiki#events)
     1. [Member joins](#member-joins)
-5. [Api integrations]#member-joins)
+5. [Api integrations](#member-joins)
     1. [nekos.life](#member-joins)
 
 ## Project Status
