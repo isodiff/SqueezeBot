@@ -21,7 +21,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
     		height="100"/></a>
 </p>
 <p align="center">
-	<img src="https://files.catbox.moe/fmst1u.png" 
+	<img src="https://de.catbox.moe/ybitp9.png" 
 	        width="300" 
     		height="100"/>
 	<br />
