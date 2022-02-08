@@ -29,13 +29,16 @@ The **project status** is actively updated. The current state is "Under Developm
 ### Slash-commands
 * **`/img interactions` command**  
 	Interact with your friends by hugging, kissing, slapping and more. Provided by [*nekos.life*](#nekoslife) api  
-	Usage: `/img interactions [type] [user]
+	> Tip: See all posible options at [user interaction options](/SqueezeBot/options#user-interaction-options)
+	
+	Usage: `/img interactions [type] [user]`
 
 	```
 	/img interactions hug @TᗯFL
 	```  
 * **`/img request` command**
 	Request pictures with nekos, cats, gecgs and more. Provided by *nekos.life* api  
+	
 	Usage: `/img request [category]`  
 	eg. ```
 * **`/bot-info` command**
