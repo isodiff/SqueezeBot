@@ -13,13 +13,13 @@
 ## Project Status
 The **project status** is actively updated. The current state is "Under Development", but it might change to two other states: "Actively Maintained" or "Deprecated"
 <p align="center">
-	<img src="https://files.catbox.moe/vn3rnk.png" 
+	<img src="https://files.catbox.moe/17w06w.png" 
 	        width="300" 
     		height="100"/>
-	<img src="https://files.catbox.moe/vz2ice.png" 
+	<img src="https://files.catbox.moe/mr3pwc.png" 
 	        width="300" 
     		height="100"/>
-  	<img src="https://files.catbox.moe/58xzgk.png" 
+  	<img src="https://files.catbox.moe/335qiy.png" 
 	        width="300" 
     		height="100"/>
 </p>  
