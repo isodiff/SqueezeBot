@@ -1,6 +1,6 @@
 # SqueezeBot (also known as Blahaj Maid)    
   
-Includes several fun commands to entertain you and your friends, as well as moderation tools to punish bad behaving users. (kinda)  
+Includes several fun commands to entertain you and your friends, as well as moderation tools to punish bad behaving users. (not really)  
 
 <p align="center">
 	<br />
