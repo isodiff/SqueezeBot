@@ -37,4 +37,4 @@ The **project status** is actively updated. The current state is "Under Developm
 ## Api integrations
 
 ### nekos.life
-Squeez uses **nekos.life** api to provide various sfw and nsfw gifs in japanese manga/anime style. It is being used in the `/img` command, both in the `interaction` and `request` subcommands. Currently, there is *no support for sending pornography* through the bot, but this feature will be considered in the future.
+Squeez uses **nekos.life** api to provide various gifs in japanese manga/anime style. It is being used in the `/img` command, both in the `interaction` and `request` subcommands. Currently, there is *no support for sending pornography* through the bot, but this feature will be considered in the future.
