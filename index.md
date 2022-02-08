@@ -21,11 +21,11 @@ Includes several fun commands to entertain you and your friends, as well as mode
     		height="100"/></a>
 </p>
 <p align="center">
-	<img src="https://de.catbox.moe/cdm6k9.png" 
+	<img src="https://files.catbox.moe/fmst1u.png" 
 	        width="300" 
     		height="100"/>
 	<br />
-	<img src="https://de.catbox.moe/vz2ice.png" 
+	<img src="https://files.catbox.moe/9pda0e.png" 
 	        width="300" 
     		height="100"/>
 	<br />
