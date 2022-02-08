@@ -4,7 +4,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
 
 <p align="center">
 	<br />
-  <a href="https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=1102196230214&scope=bot%20applications.commands" 
+  <a href="https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands" 
      rel="Invite bot - recommended">
 	  <img src="https://files.catbox.moe/mjkcb9.png" 
 	        width="200" 
@@ -32,7 +32,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
 
 </p>
 
-[View full documentaion,](https://isodiff.github.io/SqueezeBot/wiki) [Invite - (administrator)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands)
+[View full documentaion,](https://isodiff.github.io/SqueezeBot/wiki) [Invite - (alternative)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands)
 
 > Screenshots are from early development versions, some parts may be diffrent in the version 1.2
 
