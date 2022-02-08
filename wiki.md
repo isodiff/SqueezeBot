@@ -11,7 +11,7 @@
     1. [nekos.life](#nekoslife)
 
 ## Project Status
-The **project status** is actively updated. The current state is "Under Development", but it might change to two other states: "Actively Maintained" or "Deprecated"
+The **project status** is actively updated. The current state is "Under Development", but it might change to one of two other states: "Actively Maintained" or "Deprecated"
 <p align="center">
 	<img src="https://files.catbox.moe/17w06w.png" 
 	        width="300" 
@@ -27,12 +27,19 @@ The **project status** is actively updated. The current state is "Under Developm
 ## Commands
 
 ### Slash-commands
-* **`/img interactions` command**
-	* Interact with your friends by hugging, kissing, slapping and more. Provided by *nekos.life* api
+* **`/img interactions` command**  
+	Interact with your friends by hugging, kissing, slapping and more. Provided by [*nekos.life*](#nekoslife) api  
+	Usage: `/img interactions [type] [user]
+
+	```
+	/img interactions hug @TᗯFL
+	```  
 * **`/img request` command**
-	* Request pictures with nekos, cats, gecgs and more. Provided by *nekos.life* api
+	Request pictures with nekos, cats, gecgs and more. Provided by *nekos.life* api  
+	Usage: `/img request [category]`  
+	eg. ```
 * **`/bot-info` command**
-	* View information about the bot eg. Uptime, Discord.js version
+	View information about the bot eg. Uptime, Discord.js version
 * **`/help` command**
 	* View the list of all available commands
 * **`/ping` command**
