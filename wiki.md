@@ -16,7 +16,7 @@ The **project status** is actively updated. The current state is "Under Developm
 	<img src="https://files.catbox.moe/17w06w.png" 
 	        width="300" 
     		height="100"/>
-	<img src="https://files.catbox.moe/mr3pwc.png" 
+	<img src="https://files.catbox.moe/9pda0e.png" 
 	        width="300" 
     		height="100"/>
   	<img src="https://files.catbox.moe/335qiy.png" 
