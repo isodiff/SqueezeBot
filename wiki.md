@@ -7,8 +7,8 @@
     2. [Legacy Commands](/SqueezeBot/wiki#legacy-commands)
 4. [Events](/SqueezeBot/wiki#events)
     1. [Member joins](#member-joins)
-5. [Api integrations](#member-joins)
-    1. [nekos.life](#member-joins)
+5. [Api integrations](#api-integrations)
+    1. [nekos.life](#nekoslife)
 
 ## Project Status
 The **project status** is actively updated. The current state is "Under Development", but it might change to two other states: "Actively Maintained" or "Deprecated"
@@ -27,8 +27,31 @@ The **project status** is actively updated. The current state is "Under Developm
 ## Commands
 
 ### Slash-commands
-
+* **`/img interactions` command**
+	* Interact with your friends by hugging, kissing, slapping and more. Provided by *nekos.life* api
+* **`/img request` command**
+	* Request pictures with nekos, cats, gecgs and more. Provided by *nekos.life* api
+* **`/bot-info` command**
+	* View information about the bot eg. Uptime, Discord.js version
+* **`/help` command**
+	* View the list of all available commands
+* **`/ping` command**
+	* Check if the bot is online
+>  Commands below require special permissions
+* **`/ban` command**
+	* Ban users from your server
+* **`/kick` command**
+	* Kick unwanted members
+* **`/timeout` command**
+	* Mute rude users for a set amount of time
+* **`/purge` command**
+	* Delete multiple messages at once
+> note: a max of 100 messages can be deleted
 ### Legacy Commands
+* **`!help` command**
+	* View the list of all available commands
+* **`!ping` command**
+	* Check if the bot is online
 
 ## Events
 
