@@ -10,5 +10,6 @@ RUN apk add --update --no-cache \
     pango-dev
 RUN node -v
 RUN npm install
+RUN npm install -g npm@8.4.1
 COPY . /app/
 CMD node -v && node ./util/loadslash.js && node index.js

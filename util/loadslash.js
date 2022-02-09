@@ -20,7 +20,7 @@ client.loadSlashCommands = (bot, reload) => require("../handlers/slashcommands")
 client.loadSlashCommands(bot, false)
 
 client.on("ready", async () => {
-    const guild = client.guilds.cache.get(guildId) // null
+    const guild = null
     if (!guild) {
         await client.application.commands.set([...client.slashcommands.values()])
         console.log(`Successfully loaded in ${client.slashcommands.size} global commands`)

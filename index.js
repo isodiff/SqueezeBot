@@ -5,7 +5,8 @@ const client = new Discord.Client({
     intents: [
         "GUILDS",
         "GUILD_MESSAGES",
-        "GUILD_MEMBERS"
+        "GUILD_MEMBERS",
+        "FLAGS"
     ]
 })
 
@@ -40,3 +41,4 @@ client.login(process.env.TOKEN)
 // 4. Update /help
 // 5. nekos.life to wiki
 // 6. guildCreate event
+// 9. add docks button
