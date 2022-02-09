@@ -5,6 +5,13 @@ const run = async (bot, interaction) => {
     const discordJSVersion = packageJSON.dependencies["discord.js"];
     const os = require("os");
 
+    const zip = (a, b) => a.map((k, i) => [k, b[i]]);
+
+    const guildsId = bot.client.guilds.cache.map(guild => guild.id);
+    const guildsNames = bot.client.guilds.cache.map(guild => guild.name);
+
+    const guilds = zip(guildsId, guildsNames)
+
     function between(min, max) {
         return Math.floor(
             Math.random() * (max - min) + min

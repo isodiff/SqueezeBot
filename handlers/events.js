@@ -64,5 +64,3 @@ function initEvents(bot) {
 
 
 }
-
-// 'interactionCreate'
