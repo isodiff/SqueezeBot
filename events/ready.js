@@ -1,16 +1,34 @@
 module.exports = {
     name: "ready",
     run: async (bot) => {
-        const zip = (a, b) => a.map((k, i) => [k, b[i]]);
+        const { Wlcms, client } = bot;
 
-        const guildsId = bot.client.guilds.cache.map(guild => guild.id);
-        const guildsNames = bot.client.guilds.cache.map(guild => guild.name);
+        await Wlcms.sync();
 
-        const guilds = zip(guildsId, guildsNames)
+        const tagList = await Wlcms.findAll({ attributes: ['name'] });
+        const tagArray = tagList.map(t => t.name)
 
-        console.log(guilds);
-        console.log(`Logged in as ${bot.client.user.tag} in ${guilds.length} guilds`)
+        const cols = client.guilds.cache.map(guild => guild.name)
+        const rows = client.guilds.cache.map(guild => guild.id);
+        var result = rows.reduce(function (result, field, index) {
+            result[cols[index]] = field;
+            return result;
+        }, {})
 
-        bot.client.user.setActivity("!help", { type: "WATCHING" })
+        for (const f of cols) {
+            if (!tagArray.includes(f)) {
+                const tag = await Wlcms.create({
+                    name: f,
+                    description: null,
+                    trueFalse: 0,
+                    username: null,
+                });
+                console.log(`[  +  ] Added an entry for ${f}`)
+            }
+
+        }
+        console.log(result)
+        console.log(`Logged in as ${client.user.tag} in ${Object.keys(result).length} guilds`)
+        client.user.setActivity("tests", { type: "WATCHING" })
     }
 }

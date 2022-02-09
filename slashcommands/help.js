@@ -1,4 +1,5 @@
-const run = async (client, interaction) => {
+const run = async (bot, interaction) => {
+    const { client } = bot
     try {
 
         const helpEmbed = {

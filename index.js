@@ -1,4 +1,5 @@
 const Discord = require("discord.js")
+const Sequelize = require('sequelize');
 require("dotenv").config()
 
 const client = new Discord.Client({
@@ -6,14 +7,42 @@ const client = new Discord.Client({
         "GUILDS",
         "GUILD_MESSAGES",
         "GUILD_MEMBERS",
-        "FLAGS"
     ]
 })
+
+
+
+const sequelize = new Sequelize('database', 'dataadmin', 'password', {
+    host: 'localhost',
+    dialect: 'sqlite',
+    logging: false,
+    storage: 'data.sqlite',
+});
+
+const Wlcms = sequelize.define('welcomes', {
+    name: {
+        type: Sequelize.STRING,
+        unique: true,
+    },
+    description: Sequelize.TEXT,
+    trueFalse: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
+        allowNull: false,
+    },
+    username: Sequelize.STRING,
+    usage_count: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
+        allowNull: false,
+    },
+});
 
 let bot = {
     client,
     prefix: "\!",
-    owners: ["687776146875744319"]
+    owners: ["687776146875744319"],
+    Wlcms,
 }
 
 client.commands = new Discord.Collection()
@@ -41,4 +70,3 @@ client.login(process.env.TOKEN)
 // 4. Update /help
 // 5. nekos.life to wiki
 // 6. guildCreate event
-// 9. add docks button
