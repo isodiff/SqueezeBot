@@ -3,12 +3,17 @@ module.exports = {
     run: async (bot, member) => {
         const { MessageAttachment, MessageEmbed } = require('discord.js');
         const generateImage = require("../util/generateImage")
+        const { Wlcms, client } = bot
+
+        const userGuildId = member.guild.id
+        const userGuild = client.guilds.cache.get(userGuildId).name
+        const wtag = await Wlcms.findOne({ where: { name: userGuild } });
+        const welcomeChannelId = wtag.get('description')
+
+        const rulesChannelId = "938140217490169909" || "938140217490169909"
 
         const image = await generateImage(member)
         const file = new MessageAttachment([image]);
-
-        const welcomeChannelId = "938138626108313651"
-        const rulesChannelId = "938140217490169909"
 
         const welcomeEmbed = new MessageEmbed()
             .setColor('#17ffaa')
@@ -18,10 +23,18 @@ module.exports = {
             .setTimestamp()
 
         try {
-            member.guild.channels.cache.get(welcomeChannelId).send({
-                embeds: [welcomeEmbed],
-                files: [image],
-            })
+            if (wtag.get('trueFalse') === 0) return
+
+            if (wtag) {
+                wtag.increment('usage_count');
+
+                member.guild.channels.cache.get(welcomeChannelId).send({
+                    embeds: [welcomeEmbed],
+                    files: [image],
+                })
+            }
+
+            return console.log(`Sent a welcome message to ${userGuild}`);
         }
         catch (err) {
             console.log(err)

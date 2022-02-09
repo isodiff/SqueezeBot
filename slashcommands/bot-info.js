@@ -1,4 +1,5 @@
-const run = async (client, interaction) => {
+const run = async (bot, interaction) => {
+    const { client } = bot;
     const prettyMilliseconds = require("pretty-ms")
     const packageJSON = require("../package.json");
     const discordJSVersion = packageJSON.dependencies["discord.js"];

@@ -1,18 +1,48 @@
 const Discord = require("discord.js")
+const Sequelize = require('sequelize');
 require("dotenv").config()
 
 const client = new Discord.Client({
     intents: [
         "GUILDS",
         "GUILD_MESSAGES",
-        "GUILD_MEMBERS"
+        "GUILD_MEMBERS",
     ]
 })
+
+
+
+const sequelize = new Sequelize('database', 'dataadmin', 'password', {
+    host: 'localhost',
+    dialect: 'sqlite',
+    logging: false,
+    storage: 'data.sqlite',
+});
+
+const Wlcms = sequelize.define('welcomes', {
+    name: {
+        type: Sequelize.STRING,
+        unique: true,
+    },
+    description: Sequelize.TEXT,
+    trueFalse: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
+        allowNull: false,
+    },
+    username: Sequelize.STRING,
+    usage_count: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
+        allowNull: false,
+    },
+});
 
 let bot = {
     client,
     prefix: "\!",
-    owners: ["687776146875744319"]
+    owners: ["687776146875744319"],
+    Wlcms,
 }
 
 client.commands = new Discord.Collection()
