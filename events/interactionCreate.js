@@ -28,5 +28,5 @@ const handleSlashCommand = (bot, interaction) => {
     if (slashcmd.perm && !interaction.member.permissions.has(slashcmd.perm))
         return interaction.reply({ content: `${interaction.member.user.tag} is not in the moderatoers file. This incident will be reported.`, ephemeral: true })
 
-    slashcmd.run(client, interaction)
+    slashcmd.run(bot, interaction)
 }

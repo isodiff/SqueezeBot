@@ -1,7 +1,7 @@
 const { getFiles } = require('../util/functions')
 
 module.exports = (bot, reload) => {
-    const { client } = bot
+    const { client, Tags } = bot
 
     let slashcommands = getFiles("./slashcommands/", ".js")
 

@@ -1,7 +1,9 @@
+
 const { getFiles } = require('../util/functions')
 
 module.exports = (bot, reload) => {
     const { client } = bot
+
 
     let events = getFiles("./events/", ".js")
 
@@ -44,16 +46,20 @@ function initEvents(bot) {
         triggerEventHandler(bot, 'ready')
     })
 
-    client.on('messageCreate', (message) => {
-        triggerEventHandler(bot, 'messageCreate', message)
+    client.on('guildCreate', (guild) => {
+        triggerEventHandler(bot, 'guildCreate', guild)
+    })
+
+    client.on('interactionCreate', (interaction) => {
+        triggerEventHandler(bot, 'interactionCreate', interaction)
     })
 
     client.on("guildMemberAdd", (member) => {
         triggerEventHandler(bot, "guildMemberAdd", member)
     })
 
-    client.on('interactionCreate', (interaction) => {
-        triggerEventHandler(bot, 'interactionCreate', interaction)
+    client.on('messageCreate', (message) => {
+        triggerEventHandler(bot, 'messageCreate', message)
     })
 
 
