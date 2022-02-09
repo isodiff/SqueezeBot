@@ -11,17 +11,17 @@ const run = async (bot, interaction) => {
             const userGuild = client.guilds.cache.get(userGuildId).name
 
             var affectedRows = await Wlcms.update(
-                { trueFalse: 1 },
+                { trueFalse: 0 },
                 {
                     where: { name: userGuild }
                 });
             affectedRows = await Wlcms.update(
-                { description: channel.id },
+                { description: null },
                 {
                     where: { name: userGuild }
                 });
             if (affectedRows > 0) {
-                return interaction.reply(`Channel ${channel} added to database as welcome.`);
+                return interaction.reply(`Channel ${channel} removed from database`);
             }
 
             return interaction.reply(`Could not find a tag with name ${tagName}.`);
@@ -37,20 +37,14 @@ const run = async (bot, interaction) => {
 }
 
 module.exports = {
-    name: "enable",
-    description: "Enable bot features",
+    name: "disable",
+    description: "Disable bot features",
     perm: "ADMINISTRATOR",
     options: [
         {
             name: "welcome-message",
-            description: "enable the welcome message",
+            description: "Disable the welcome message",
             type: 1,
-            options: [
-                {
-                    name: "name", description: "name of the channel",
-                    type: "STRING", required: true,
-                },
-            ]
         },
 
     ],

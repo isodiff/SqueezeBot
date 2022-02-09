@@ -1,14 +1,11 @@
-FROM node:16-alpine
+FROM node:16-bullseye
 WORKDIR /app
 COPY package.json /app
-RUN apk add --update --no-cache \
-    make \
-    g++ \
-    jpeg-dev \
-    cairo-dev \
-    giflib-dev \
-    pango-dev
-RUN node -v
-RUN npm install
+
+RUN apt-get update
+RUN apt-get install -y build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+RUN npm install --build-from-source --sqlite=/usr/local
+RUN npm up -g
+
 COPY . /app/
 CMD node -v && node ./util/loadslash.js && node index.js

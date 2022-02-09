@@ -1,4 +1,5 @@
 .env
 package-lock.json
 data.sqlite
+Dockerfile
 node_modules/
