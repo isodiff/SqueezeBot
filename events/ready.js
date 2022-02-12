@@ -29,6 +29,6 @@ module.exports = {
         }
         console.log(result)
         console.log(`Logged in as ${client.user.tag} in ${Object.keys(result).length} guilds`)
-        client.user.setActivity("tests", { type: "WATCHING" })
+        client.user.setActivity("nuclear tests", { type: "WATCHING" })
     }
 }

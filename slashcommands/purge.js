@@ -1,9 +1,17 @@
 const run = async (client, interaction) => {
 	let amount = interaction.options.getNumber("amount")
 	try {
-		if (amount < 100) return interaction.reply({ content: "The value should be less or equal to 100", ephemeral: true })
+		if (amount > 100) {
+			var howMuch = Math.floor(amount / 100)
+			var rest = amount - howMuch * 100
+			if (!rest === 0 && rest <= 100) await interaction.channel.bulkDelete(rest)
+			for (step = 0; step <= howMuch; step++) {
+				await interaction.channel.bulkDelete(100)
+			}
+			return interaction.reply({ content: `${amount} messages have been deleted`, ephemeral: true })
+		}
 		await interaction.channel.bulkDelete(amount)
-		interaction.reply((`${amount} messages have been deleted`))
+		interaction.reply({ content: `${amount} messages have been deleted`, ephemeral: true })
 		return
 	}
 	catch (err) {

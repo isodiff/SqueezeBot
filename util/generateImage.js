@@ -4,7 +4,7 @@ const Discord = require('discord.js')
 const dimensions = {
     height: 675,
     width: 1200,
-    margin: 50
+    margin: 20
 }
 
 const av = {
@@ -60,13 +60,13 @@ const generateImage = async (guild, member, bot) => {
     ctx.fillStyle = "white"
     ctx.textAlign = "center"
 
-    ctx.font = "90px Dongle"
-    ctx.fillText(topText, dimensions.width / 2, dimensions.margin + 70)
+    ctx.font = "110px Dongle"
+    ctx.fillText(topText, dimensions.width / 2, dimensions.margin + 90)
 
-    ctx.font = "100px Dongle"
+    ctx.font = "110px Dongle"
     ctx.fillText(username + " \#" + discrim, dimensions.width / 2, dimensions.height - dimensions.margin - 125)
 
-    ctx.font = "70px Dongle"
+    ctx.font = "80px Dongle"
     ctx.fillText(bottomText, dimensions.width / 2, dimensions.height - dimensions.margin - 50)
 
     const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "welcome.png")
