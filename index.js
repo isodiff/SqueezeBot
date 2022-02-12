@@ -30,6 +30,9 @@ const Wlcms = sequelize.define('welcomes', {
         defaultValue: 0,
         allowNull: false,
     },
+    top_text: Sequelize.TEXT,
+    bottom_text: Sequelize.TEXT,
+    image_link: Sequelize.TEXT,
     username: Sequelize.STRING,
     usage_count: {
         type: Sequelize.INTEGER,

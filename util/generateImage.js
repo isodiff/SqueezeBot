@@ -16,12 +16,23 @@ const av = {
 
 
 
-const background = "https://de.catbox.moe/bs75ks.png"
 
-const generateImage = async (member) => {
+
+const generateImage = async (guild, member, bot) => {
+    const { Wlcms } = bot
     let username = member.user.username
     let discrim = member.user.discriminator
     let avatarUrl = member.user.displayAvatarURL({ format: 'png', dynamic: false, size: av.size })
+    var tag = await Wlcms.findOne({ where: { name: guild } });
+
+    var background = "https://de.catbox.moe/bs75ks.png"
+
+    if (tag) {
+        tag.increment('usage_count');
+        var topText = tag.get('top_text');
+        var bottomText = tag.get('bottom_text');
+        var background = tag.get('image_link');
+    }
 
     const canvas = Canvas.createCanvas(dimensions.width, dimensions.height)
     const ctx = canvas.getContext('2d')
@@ -50,13 +61,13 @@ const generateImage = async (member) => {
     ctx.textAlign = "center"
 
     ctx.font = "90px Dongle"
-    ctx.fillText("Welcome", dimensions.width / 2, dimensions.margin + 70)
+    ctx.fillText(topText, dimensions.width / 2, dimensions.margin + 70)
 
     ctx.font = "100px Dongle"
     ctx.fillText(username + " \#" + discrim, dimensions.width / 2, dimensions.height - dimensions.margin - 125)
 
     ctx.font = "70px Dongle"
-    ctx.fillText("to the server", dimensions.width / 2, dimensions.height - dimensions.margin - 50)
+    ctx.fillText(bottomText, dimensions.width / 2, dimensions.height - dimensions.margin - 50)
 
     const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "welcome.png")
     return attachment

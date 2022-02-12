@@ -12,7 +12,7 @@ module.exports = {
 
         const rulesChannelId = "938140217490169909" || "938140217490169909"
 
-        const image = await generateImage(member)
+        const image = await generateImage(userGuild, member, bot)
         const file = new MessageAttachment([image]);
 
         const welcomeEmbed = new MessageEmbed()
