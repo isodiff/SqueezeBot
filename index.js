@@ -70,6 +70,5 @@ client.login(process.env.TOKEN)
 
 
 // TODO: add:
-// 4. Update /help
-// 5. nekos.life to wiki
-// 6. guildCreate event
+// 3. Update /help
+// 9. nekobot

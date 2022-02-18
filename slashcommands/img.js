@@ -27,7 +27,7 @@ const run = async (client, interaction) => {
 
             .setImage(interactionData['url'])
 
-        const mesg = await interaction.reply({ embeds: [interactionEmbed] })
+        await interaction.reply({ embeds: [interactionEmbed] })
         return
     }
     catch (err) {

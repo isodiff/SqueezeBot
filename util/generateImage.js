@@ -13,11 +13,6 @@ const av = {
     y: 170
 }
 
-
-
-
-
-
 const generateImage = async (guild, member, bot) => {
     const { Wlcms } = bot
     let username = member.user.username
