@@ -56,7 +56,8 @@ The **project status** is actively updated. The current state is "Under Developm
 	* Mute rude users for a set amount of time
 * **`/purge` command**
 	* Delete multiple messages at once
-> note: a max of 100 messages can be deleted
+> note: a max of 100 messages can be deleted  
+
 ### Legacy Commands
 * **`!help` command**
 	* View the list of all available commands
