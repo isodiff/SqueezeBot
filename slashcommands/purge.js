@@ -4,7 +4,7 @@ const run = async (client, interaction) => {
 		if (amount > 100) {
 			var howMuch = Math.floor(amount / 100)
 			var rest = amount - howMuch * 100
-			if (!rest === 0 && rest <= 100) await interaction.channel.bulkDelete(rest)
+			if (!rest === 0 && rest <= 100) await interaction.channel.bulkDelete(rest, true)
 			for (step = 0; step <= howMuch; step++) {
 				await interaction.channel.bulkDelete(100)
 			}
@@ -24,7 +24,7 @@ const run = async (client, interaction) => {
 
 module.exports = {
 	name: "purge",
-	description: "Delete multiple messages, the amount should be less than 100",
+	description: "Delete multiple messages",
 	perm: "ADMINISTRATOR",
 	options: [
 		{

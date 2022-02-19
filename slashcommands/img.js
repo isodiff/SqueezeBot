@@ -24,9 +24,7 @@ const run = async (client, interaction) => {
             .setColor('#f542e6')
             .setTitle(`${what}\!`)
             .setDescription(`**${interaction.member.user.username}** requested ${what}`)
-
             .setImage(interactionData['url'])
-
         await interaction.reply({ embeds: [interactionEmbed] })
         return
     }
@@ -36,7 +34,6 @@ const run = async (client, interaction) => {
             return interaction.reply(`Failed to request`)
         }
     }
-
 }
 
 module.exports = {

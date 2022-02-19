@@ -34,11 +34,15 @@ const generateImage = async (guild, member, bot) => {
 
     // draw background
     const backimg = await Canvas.loadImage(background)
-    ctx.drawImage(backimg, 0, 0)
+    ctx.drawImage(
+        backimg,
+        canvas.width / 2 - backimg.width / 2,
+        canvas.height / 2 - backimg.height / 2
+    )
 
 
     // draw black tinted box
-    ctx.fillStyle = "rgba(0,0,0,0.8)"
+    ctx.fillStyle = "rgba(0,0,0,0.7)"
     ctx.fillRect(dimensions.margin, dimensions.margin, dimensions.width - 2 * dimensions.margin, dimensions.height - 2 * dimensions.margin)
 
     // draw avatar

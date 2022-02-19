@@ -2,18 +2,26 @@ const run = async (bot, interaction) => {
     const { Wlcms, client } = bot
 
     if (interaction.options.getSubcommand() === 'welcome-message') {
-        const tagName = interaction.options.getString('name') || interaction.channel.name
+        const tagName = interaction.options.getString('channel-name') || interaction.channel.name
         const topText = interaction.options.getString('top-text') || "Welcome"
-        const bottomText = interaction.options.getString('bottom-text') || "to the server"
+        const bottomText = interaction.options.getString('bottom-text') || " "
         const imageLink = interaction.options.getString('image') || 'https://de.catbox.moe/bs75ks.png'
-
         try {
-            const channel = interaction.guild.channels.cache.find(
+            var channel = interaction.guild.channels.cache.find(
                 channel => channel.name === `${tagName}`
             );
-            const userGuildId = interaction.guild.id
-            const userGuild = client.guilds.cache.get(userGuildId).name
+            var userGuildId = interaction.guild.id
+            var userGuild = client.guilds.cache.get(userGuildId).name
+            console.log(channel.id)
+        }
+        catch (error) {
+            console.error(error)
+            console.log("Adding wlcm msg went wrong at 'Channel name' ", userGuild, interaction.channel.name)
+            return interaction.reply('Wrong channel name');
+        }
 
+
+        try {
             var affectedRows = await Wlcms.update(
                 { trueFalse: 1 },
                 {
@@ -55,6 +63,7 @@ const run = async (bot, interaction) => {
                 return interaction.reply('That channel already exists in database.');
             }
             console.error(error)
+            console.log(userGuild, interacion.channel.name)
             return interaction.reply('Something went wrong with adding a channel to database.');
         }
     }
@@ -71,7 +80,7 @@ module.exports = {
             type: 1,
             options: [
                 {
-                    name: "name", description: "name of the channel",
+                    name: "channel-name", description: "name of the channel",
                     type: "STRING", required: false,
                 },
                 {

@@ -26,7 +26,7 @@ module.exports = {
         }
 
         try {
-            await command.run({ ...bot, message, args })
+            await command.run({ bot, message, args })
         }
         catch (err) {
             let errMsg = err.toString()

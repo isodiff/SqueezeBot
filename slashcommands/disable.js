@@ -15,7 +15,7 @@ const run = async (bot, interaction) => {
                 {
                     where: { name: userGuild }
                 });
-            affectedRows = await Wlcms.update(
+            await Wlcms.update(
                 { description: null },
                 {
                     where: { name: userGuild }
