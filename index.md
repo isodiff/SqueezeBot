@@ -31,8 +31,14 @@ Includes several fun commands to entertain you and your friends, as well as mode
 	<br />
 
 </p>
-
-[View full documentaion,](https://isodiff.github.io/SqueezeBot/wiki) [Invite - (alternative)](https://discord.com/api/oauth2/authorize?client_id=938121371484061766&permissions=8&scope=bot%20applications.commands)
+<p align="left">
+	<br />
+  <a href="https://isodiff.github.io/SqueezeBot/wiki" 
+     rel="View full documentaion">
+	  <img src="https://files.catbox.moe/b8qgrb.png" 
+	        width="200" 
+    		height="100"/></a>
+</p>
 
 > Screenshots are from early development versions, some parts may be diffrent in the version 1.2
 
