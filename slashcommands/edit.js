@@ -43,7 +43,7 @@ const run = async (bot, interaction) => {
                 );
             }
             if (affectedRows > 0) {
-                return interaction.reply(`Channel ${channel} added to database as welcome.`);
+                return interaction.reply(`Successfully edited the message`);
             }
 
             return interaction.reply(`Could not find a tag with name ${tagName}.`);

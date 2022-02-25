@@ -10,8 +10,6 @@ const client = new Discord.Client({
     ]
 })
 
-
-
 const sequelize = new Sequelize('database', 'dataadmin', 'password', {
     host: 'localhost',
     dialect: 'sqlite',

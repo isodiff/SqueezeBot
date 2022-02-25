@@ -1,5 +1,6 @@
 const run = async (bot, interaction) => {
     const { client } = bot
+    const slashes = client.slashcommands.size
     try {
 
         const helpEmbed = {
@@ -9,7 +10,7 @@ const run = async (bot, interaction) => {
             fields: [
                 {
                     name: 'Commands:',
-                    value: `9`,
+                    value: `${slashes}`,
                     inline: true
                 }, {
                     name: 'Prefix:',
@@ -17,7 +18,7 @@ const run = async (bot, interaction) => {
                     inline: true
                 }, {
                     name: 'Documentation:',
-                    value: '[Click here](https://github.com/isodiff/SqueezeBot#squeezebot-also-known-as-blahaj-maid)',
+                    value: '[Click here](https://isodiff.github.io/SqueezeBot/wiki)',
                     inline: true
                 },
                 {
@@ -26,12 +27,12 @@ const run = async (bot, interaction) => {
                     inline: false
                 },
                 {
-                    name: "Img / request:",
+                    name: "Img:",
                     value: "Request an sfw image!\r\nArguments: **category**",
                     inline: true
                 },
                 {
-                    name: "Img / interaction:",
+                    name: "owo:",
                     value: "Interact with friends!\r\nArguments: **type**, **@user**",
                     inline: true
                 }, {
@@ -59,6 +60,21 @@ const run = async (bot, interaction) => {
                     inline: false
                 },
                 {
+                    name: "enable:",
+                    value: "Enable bot features.\r\nArguments: **feature**",
+                    inline: true
+                },
+                {
+                    name: "disable:",
+                    value: "Disable bot features.\r\nArguments: **feature**",
+                    inline: true
+                },
+                {
+                    name: "edit:",
+                    value: "Edit certain aspects of the bot.\r\nArguments: **feature**",
+                    inline: true
+                },
+                {
                     name: "opętanie:",
                     value: "Rozkaż demonom opętać grzeszną duszę.\r\nArguments: **@user, reason**",
                     inline: true
@@ -73,7 +89,7 @@ const run = async (bot, interaction) => {
                     inline: true
                 },
                 {
-                    name: "Timeout:",
+                    name: "timeout:",
                     value: "Mute a member.\r\nArguments: **@user, duration, reason**",
                     inline: true
                 },

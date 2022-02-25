@@ -1,9 +1,11 @@
 const run = async (bot, interaction) => {
-    const { client } = bot;
+    const { client } = bot
     const prettyMilliseconds = require("pretty-ms")
-    const packageJSON = require("../package.json");
-    const discordJSVersion = packageJSON.dependencies["discord.js"];
-    const os = require("os");
+    const packageJSON = require("../package.json")
+    const discordJSVersion = packageJSON.dependencies["discord.js"]
+    const os = require("os")
+
+    const slashes = client.slashcommands.size
 
     const zip = (a, b) => a.map((k, i) => [k, b[i]]);
 
@@ -46,7 +48,7 @@ const run = async (bot, interaction) => {
                     inline: true
                 }, {
                     name: 'Commands:',
-                    value: `11`,
+                    value: `${slashes}`,
                     inline: true
                 }, {
                     name: 'Prefix:',

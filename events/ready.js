@@ -1,3 +1,11 @@
+const Discord = require("discord.js")
+require("dotenv").config()
+
+
+var cyan = "\x1b[36m%s\x1b[0m"
+var yelo = "\x1b[33m%s\x1b[0m"
+var magenta = "\x1b[35m%s\x1b[0m"
+
 module.exports = {
     name: "ready",
     run: async (bot) => {
@@ -23,12 +31,13 @@ module.exports = {
                     trueFalse: 0,
                     username: null,
                 });
-                console.log(`[  +  ] Added an entry for ${f}`)
+                console.log(magenta, `[  +  ] Added an entry for ${f}`)
             }
 
         }
         console.log(result)
-        console.log(`Logged in as ${client.user.tag} in ${Object.keys(result).length} guilds`)
+        console.log(yelo, `Logged in as ${client.user.tag} in ${Object.keys(result).length} guilds`)
         client.user.setActivity("nuclear tests", { type: "WATCHING" })
     }
 }
+
