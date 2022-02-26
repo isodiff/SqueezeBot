@@ -21,7 +21,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
     		height="100"/></a>
 </p>
 <p align="center">
-	<img src="https://files.catbox.moe/fmst1u.png align="left"" 
+	<img src="https://files.catbox.moe/fmst1u.png" 
 	        width="300" 
     		height="100"/>
 	<br />
@@ -42,10 +42,10 @@ Includes several fun commands to entertain you and your friends, as well as mode
 
 <p align="center">
 	<br />
-	<h1 align="left" > Test our new bot! </h1>
+	<h1 align="center" > Test our new bot! </h1>
   <a href="https://discord.com/api/oauth2/authorize?client_id=940585483694657536&permissions=8&scope=bot%20applications.commands" 
      rel="Invite bot - recommended">
-	  <img src="https://i.imgur.com/LyeQU2C.png" 
+	  <img src="https://i.imgur.com/LyeQU2C.png align="center"" 
 	        width="200" 
     		height="100"/></a>
 
