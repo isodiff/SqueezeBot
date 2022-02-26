@@ -52,7 +52,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
 		</a>
 
 </p>
-
+<h1 align="center" > About Blahaj Maid </h1>
 > Screenshots are from early development versions, some parts may be diffrent in the version 1.2
 
 # Features:    
