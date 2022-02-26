@@ -47,7 +47,8 @@ Includes several fun commands to entertain you and your friends, as well as mode
      rel="Invite bot - recommended">
 	  <img src="https://i.imgur.com/LyeQU2C.png" 
 	        width="200" 
-    		height="100"/></a>
+    		height="100"/> 
+		align="center"</a>
 
 </p>
 
