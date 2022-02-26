@@ -44,7 +44,7 @@ Includes several fun commands to entertain you and your friends, as well as mode
 <br />
 <h1 align="center" > Test our new bot! </h1>
 <p align="center">	
-  <align="center" href="https://discord.com/api/oauth2/authorize?client_id=940585483694657536&permissions=8&scope=bot%20applications.commands" 
+  <href="https://discord.com/api/oauth2/authorize?client_id=940585483694657536&permissions=8&scope=bot%20applications.commands" 
      rel="Invite bot - recommended">
 	  <img src="https://i.imgur.com/LyeQU2C.png" 
 	        width="200" 
