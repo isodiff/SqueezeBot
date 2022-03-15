@@ -37,7 +37,7 @@ module.exports = {
         }
         console.log(result)
         console.log(yelo, `Logged in as ${client.user.tag} in ${Object.keys(result).length} guilds`)
-        client.user.setActivity("nuclear tests", { type: "WATCHING" })
+        client.user.setActivity("Слава Україні!", { type: "WATCHING" })
     }
 }
 

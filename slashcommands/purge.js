@@ -6,11 +6,11 @@ const run = async (client, interaction) => {
 			var rest = amount - howMuch * 100
 			if (!rest === 0 && rest <= 100) await interaction.channel.bulkDelete(rest, true)
 			for (step = 0; step <= howMuch; step++) {
-				await interaction.channel.bulkDelete(100)
+				await interaction.channel.bulkDelete(100, true)
 			}
 			return interaction.reply({ content: `${amount} messages have been deleted`, ephemeral: true })
 		}
-		await interaction.channel.bulkDelete(amount)
+		await interaction.channel.bulkDelete(amount, true)
 		interaction.reply({ content: `${amount} messages have been deleted`, ephemeral: true })
 		return
 	}

@@ -35,10 +35,6 @@ const run = async (bot, interaction) => {
                     name: "owo:",
                     value: "Interact with friends!\r\nArguments: **type**, **@user**",
                     inline: true
-                }, {
-                    name: 'Rozgrzeszenie:',
-                    value: `Sprowadź towarzysza na odpowiednią ścieżkę.\r\nArguments: **@user**`,
-                    inline: true
                 },
                 {
                     name: "\/Info",
@@ -72,11 +68,6 @@ const run = async (bot, interaction) => {
                 {
                     name: "edit:",
                     value: "Edit certain aspects of the bot.\r\nArguments: **feature**",
-                    inline: true
-                },
-                {
-                    name: "opętanie:",
-                    value: "Rozkaż demonom opętać grzeszną duszę.\r\nArguments: **@user, reason**",
                     inline: true
                 },
                 {

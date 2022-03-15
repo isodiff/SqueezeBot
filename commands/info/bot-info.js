@@ -43,7 +43,7 @@ module.exports = {
                         inline: true
                     }, {
                         name: 'Commands:',
-                        value: `11`,
+                        value: `21`,
                         inline: true
                     }, {
                         name: 'Prefix:',

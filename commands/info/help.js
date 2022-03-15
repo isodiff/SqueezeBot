@@ -5,7 +5,7 @@ const helpEmbed = {
     fields: [
         {
             name: 'Commands:',
-            value: `9`,
+            value: `21`,
             inline: true
         }, {
             name: 'Prefix:',
